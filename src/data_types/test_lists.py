@@ -61,9 +61,11 @@ def test_list_type():
     letters[:] = []
     assert letters == []
 
-    # The built-in function len() also applies to lists
+    # The built-in function len() also applies to lists, and the in operator checks membership
     letters = ['a', 'b', 'c', 'd']
     assert len(letters) == 4
+    assert 'b' in letters
+    assert 'z' not in letters
 
     # It is possible to nest lists (create lists containing other lists),
     # for example:
