@@ -61,9 +61,12 @@ def test_list_type():
     letters[:] = []
     assert letters == []
 
-    # The built-in function len() also applies to lists, and the in operator checks membership
+    # The built-in functions len(), min() and max() also apply to lists,
+    # and the in operator checks membership
     letters = ['a', 'b', 'c', 'd']
     assert len(letters) == 4
+    assert min(letters) == 'a'
+    assert max(letters) == 'd'
     assert 'b' in letters
     assert 'z' not in letters
 
