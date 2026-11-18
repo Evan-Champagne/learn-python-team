@@ -30,7 +30,7 @@ def test_if_statement():
 
 def test_if_elif_chain():
 
-    number_grade=89
+    number_grade = 89
     grade = 'F'
 
     if number_grade >= 90:
@@ -42,10 +42,10 @@ def test_if_elif_chain():
     else:
         grade = 'F'
 
-    assert grade=='B'
+    assert grade == 'B'
 
 
-def get_ticket_price():
+def test_ticket_price():
 
     age = 83
     is_student = True
@@ -61,9 +61,4 @@ def get_ticket_price():
         else:
             price = 12
 
-
     assert price == 8
-
-
-
-
