@@ -22,10 +22,12 @@ def test_if_statement():
         conclusion = 'Number equals to zero'
     elif number < 1:
         conclusion = 'Number is greater than zero but less than one'
+    elif number < 10:
+        conclusion = 'Number is at least one but less than ten'
     else:
-        conclusion = 'Number bigger than or equal to one'
+        conclusion = 'Number is ten or bigger'
 
-    assert conclusion == 'Number bigger than or equal to one'
+    assert conclusion == 'Number is ten or bigger'
 
 
 def test_if_elif_chain():
